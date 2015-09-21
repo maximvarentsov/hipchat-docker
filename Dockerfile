@@ -4,7 +4,7 @@
 FROM stackbrew/ubuntu:13.10
 
 # add the universe repo
-RUN echo "deb http://archive.ubuntu.com/ubuntu precise main universe" > /etc/apt/sources.list
+RUN echo "deb http://archive.ubuntu.com/ubuntu trusty main universe" > /etc/apt/sources.list
 
 # setup hipchat sources
 RUN echo "deb http://downloads.hipchat.com/linux/apt stable main" | tee /etc/apt/sources.list.d/atlassian-hipchat.list
